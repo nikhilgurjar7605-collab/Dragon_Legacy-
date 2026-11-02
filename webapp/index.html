@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#090b16"><title>ANIMEVERSE — Riftbound</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app-shell">
+  <aside class="sidebar">
+    <div class="brand"><div class="brand-mark">✦</div><div><b>ANIMEVERSE</b><small>RIFTBOUND</small></div></div>
+    <div class="profile-mini"><div class="avatar">N</div><div><b id="sideName">Rift Walker</b><small>Level <span id="sideLevel">12</span> · <span id="sideRank">Bronze II</span></small></div><span class="online-dot"></span></div>
+    <nav id="sideNav">
+      <button class="nav-item active" data-page="home"><span>⌂</span> Overview</button>
+      <button class="nav-item" data-page="summon"><span>✧</span> Rift Summon <i>NEW</i></button>
+      <button class="nav-item" data-page="collection"><span>▤</span> Collection</button>
+      <button class="nav-item" data-page="deck"><span>⚔</span> Battle Formation</button>
+      <button class="nav-item" data-page="battle"><span>◈</span> Arena</button>
+      <button class="nav-item" data-page="explore"><span>⌖</span> Dimensions</button>
+      <button class="nav-item" data-page="market"><span>⇄</span> Exchange</button>
+    </nav>
+    <div class="sidebar-bottom"><div class="season-card"><small>SEASON 01</small><b>THE FRACTURED SKY</b><div class="season-progress"><span></span></div><small>12 days remaining</small></div><button class="nav-item" data-page="profile"><span>⚙</span> Player profile</button><div class="build-tag">ALPHA BUILD · v0.1.0</div></div>
+  </aside>
+  <main class="main-area">
+    <header class="topbar"><button class="mobile-brand" id="mobileMenu">☰ <b>ANIMEVERSE</b></button><div class="breadcrumbs">NEXUS CITY <span>/</span> <b id="crumb">OVERVIEW</b></div><div class="top-resources"><div class="resource"><span class="coin">◉</span><b id="gold">2,450</b></div><div class="resource"><span class="gem">✧</span><b id="gems">500</b><button class="plus" data-go="summon">+</button></div><div class="top-avatar">N</div></div></header>
+    <div class="content" id="content"></div>
+    <footer class="mobile-nav" id="mobileNav"><button class="active" data-page="home">⌂<small>Home</small></button><button data-page="summon">✧<small>Summon</small></button><button data-page="collection">▤<small>Cards</small></button><button data-page="battle">⚔<small>Arena</small></button><button data-page="explore">⌖<small>World</small></button></footer>
+  </main>
+</div>
+<div class="toast-wrap" id="toasts"></div><div class="modal-backdrop" id="modal" aria-hidden="true"><div class="modal" id="modalBody"></div></div>
+<script src="app.js"></script>
+</body></html>
